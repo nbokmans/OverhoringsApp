@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/primary</item>
+
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+
+        <!--   theme UI controls like checkboxes and text fields -->
+        <!--   native widgets will now be "tinted" with accent color -->
+        <item name="colorAccent">@color/accent</item>
+
+        <!--Action bar style-->
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+
+        <item name="actionBarSize">70.0dip</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="android:height">@dimen/bar_height</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/bar_text_size</item>
+        <item name="android:textColor">@color/bar_text_color</item>
+    </style>
+
+    <color name="primary_dark">#007700</color>
+    <color name="primary">#008800</color>
+    <color name="accent">#000</color>
+    <color name="bar_text_color">#123456</color>
+    <dimen name="bar_height">60pt</dimen>
+    <dimen name="bar_text_size">8pt</dimen>
+</resources>

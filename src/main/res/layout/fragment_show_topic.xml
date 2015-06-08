@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Topic"
+            android:id="@+id/DeleteTopic"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/buttons"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aanpassen"
+            android:id="@+id/EditTopic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:background="@android:color/transparent"
+            android:id="@+id/ShowTopic_Content"
+            android:layout_span="3"
+            android:text="Inhoud van de topice"
+            android:textSize="14sp"
+            android:layout_alignParentBottom="true"
+            android:padding="20dp"
+            android:layout_below="@+id/EditTopic" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline beschikbaar"
+            android:id="@+id/offlineAvailable"
+            android:layout_alignBottom="@+id/EditTopic"
+            android:layout_alignRight="@+id/DeleteTopic"
+            android:layout_alignEnd="@+id/DeleteTopic"
+            android:checked="false" />
+
+
+    </RelativeLayout>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_action_play"
+        fab:fab_colorNormal="@color/primary_dark"
+        fab:fab_colorPressed="@color/primary"
+        fab:fab_colorRipple="#afafaf"
+        android:onClick="startRehearsal" />
+</FrameLayout>
