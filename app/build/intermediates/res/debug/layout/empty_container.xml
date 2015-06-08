@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/empty_container">
-
-</LinearLayout><!-- From: file:/C:/Users/Niels/Desktop/android/over2/app/src/main/res/layout/empty_container.xml -->
