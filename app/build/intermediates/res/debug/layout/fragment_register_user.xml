@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ica.han.oose.project.overhoorapp.account.RegisterUserFragment$PlaceholderFragment">
+
+    <LinearLayout
+        style="@style/Base.V14.Theme.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Voornaam"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Achternaam" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="emailadres"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Wachtwoord"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/passwordRepeated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Herhaal wachtwoord"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/Platform.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/buttons"
+                android:clickable="true"
+                android:ellipsize="none"
+                android:enabled="true"
+                android:onClick="buttonRegisterOnClick"
+                android:singleLine="false"
+                android:text="Register"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+<!-- From: file:/C:/Users/Niels/Desktop/android/over2/app/src/main/res/layout/fragment_register_user.xml -->

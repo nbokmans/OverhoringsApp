@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vraag:"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Antwoord(en)"
+        android:id="@+id/textView6"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/Multi_Question"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Order_Vraag"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opslaan"
+        android:id="@+id/Order_Save"
+        android:background="@drawable/buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Order_Answer4" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Order_Answer1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/Correct"
+        android:layout_toEndOf="@+id/Correct" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Order_Answer2"
+        android:layout_below="@+id/Order_Answer1"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/Correct"
+        android:layout_toRightOf="@+id/Correct" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Order_Answer3"
+        android:layout_below="@+id/Order_Answer2"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/Order_Answer2"
+        android:layout_alignStart="@+id/Order_Answer2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Order_Answer4"
+        android:layout_below="@+id/Order_Answer3"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/Order_Answer2"
+        android:layout_alignStart="@+id/Order_Answer2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Antwoord order"
+        android:id="@+id/Correct"
+        android:layout_alignTop="@+id/Order_Answer1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/Order_Answer1"
+        android:gravity="fill_vertical" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Niels/Desktop/android/over2/app/src/main/res/layout/fragment_create_order_question.xml -->

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+<!-- Search, should appear as action button -->
+<item android:id="@+id/action_stop_quiz"
+    android:icon="@drawable/ic_action_stop"
+    android:title="Stoppen"
+    yourapp:showAsAction="ifRoom"  />
+</menu><!-- From: file:/C:/Users/Niels/Desktop/android/over2/app/src/main/res/menu/menu_quiz_stop.xml -->

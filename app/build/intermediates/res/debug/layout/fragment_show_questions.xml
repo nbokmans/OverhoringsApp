@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ica.han.oose.project.overhoorapp.knowledge.TopicListFragment">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showQuestionsList" />
+
+    <TextView android:id="@android:id/empty" android:layout_width="218dp"
+        android:layout_height="match_parent" android:gravity="center" />
+
+</FrameLayout><!-- From: file:/C:/Users/Niels/Desktop/android/over2/app/src/main/res/layout/fragment_show_questions.xml -->
